@@ -18,22 +18,35 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
 
                 for (var i = 0; i < 10; i++) {
                     var armtitle = data[i].name
-                    const displayArmTitle = document.createElement('h2')
-                    const contentArmTitle = document.createTextNode(armtitle)
-                    displayArmTitle.appendChild(contentArmTitle)
-                    document.getElementById("workoutTitle").appendChild(displayArmTitle)
+                    var mainBox = document.getElementById("mainBox")
+                    // mainBox.appendChild(document.createElement("div").setAttribute("id" , "1"))
+                    // .appendChild(document.createElement("h2"))
+                    // .appendChild(document.createElement("p"))
+                    // mainBox.textContent = "hello world"
+                    // const displayArmTitle = document.createElement('h2')
+                    const content = `
+                    <div class="card" id="card-${[i]}">
+                    <h2>${data[i].name}</h2>
+                    <p>${data[i].equipment}</p>
+                    <p>${data[i].instructions}</p>
+                    </div>` 
+                    console.log(armtitle)
+                    mainBox.innerHTML += content
+                    // const contentArmTitle = document.createTextNode(armtitle)
+                    // displayArmTitle.appendChild(contentArmTitle)
+                    // document.getElementById("workoutTitle").appendChild(displayArmTitle)
 
-                    var absEquipment = data[i].equipment
-                    const displayAbsEquipment = document.createElement('h3')
-                    const conetentAbsEquipment = document.createTextNode(absEquipment)
-                    displayAbsEquipment.appendChild(conetentAbsEquipment)
-                    document.getElementById('workoutEquipment').appendChild(displayAbsEquipment)
+                    // var absEquipment = data[i].equipment
+                    // const displayAbsEquipment = document.createElement('h3')
+                    // const conetentAbsEquipment = document.createTextNode(absEquipment)
+                    // displayAbsEquipment.appendChild(conetentAbsEquipment)
+                    // document.getElementById('workoutEquipment').appendChild(displayAbsEquipment)
 
-                    var absInformation = data[i].instructions
-                    const displayAbsInfo = document.createElement('p')
-                    const contentAbsInfo = document.createTextNode(absInformation)
-                    displayAbsInfo.appendChild(contentAbsInfo)
-                    document.getElementById('workoutInfo').appendChild(displayAbsInfo)
+                    // var absInformation = data[i].instructions
+                    // const displayAbsInfo = document.createElement('p')
+                    // const contentAbsInfo = document.createTextNode(absInformation)
+                    // displayAbsInfo.appendChild(contentAbsInfo)
+                    // document.getElementById('workoutInfo').appendChild(displayAbsInfo)
                 }
             });
         },
