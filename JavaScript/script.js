@@ -518,3 +518,83 @@ button.addEventListener("submit" , function(event){
   
     calculateCalorie(event.target)
 })}
+
+
+if (window.location.href.includes = ('index.html')) {
+    let options = {
+        method: 'GET',
+        headers: {
+            'x-api-key': 'MEse9WuVgjjzP6YYlCv3pg==s93de26XwygSE5iO'
+        }
+    }
+    let url = 'https://api.api-ninjas.com/v1/quotes?category=fitness'
+
+    fetch(url, options).then (function(response) {
+        return response.json()
+    }).then(function(data) {
+        console.log(data)
+        var quoteText = data[0].quote
+        var quoteAuthor = data[0].author
+        console.log(quoteAuthor)
+        console.log(quoteText)
+        var quoteTextID = document.getElementById('quote')
+        var quoteAuthorID = document.getElementById('quoteAuthor')
+        quoteTextID.innerHTML += quoteText
+        quoteAuthorID.innerHTML += quoteAuthor
+    })  
+}
+
+if (window.location.href.includes = ('index.html')) {
+    window.onload = function() {
+        var confirmBtn = document.getElementById('confirmButton');
+        confirmBtn.addEventListener('click', function(btn) {
+            btn.preventDefault();
+            var inputBox = document.getElementById('inputBox');
+            console.log(inputBox.value);
+            let options = {
+                method: 'GET',
+                headers: {
+                    'x-api-key': 'MEse9WuVgjjzP6YYlCv3pg==s93de26XwygSE5iO'
+                }
+            }
+            let url2 = 'https://api.api-ninjas.com/v1/nutrition?query=' + inputBox.value
+            console.log(url2)
+            fetch(url2, options).then (function(response) {
+                return response.json()
+            }).then(function(data) {
+                console.log(data[0])
+                var checkFood = document.getElementById('foodCheckIfAvailable')
+                var totalCarbs = document.getElementById("carbohydrates_total_g")
+                var totalCalories = document.getElementById("calories")
+                var totalFat = document.getElementById("fat_total_g")
+                var totalProtien = document.getElementById("protein_g")
+                var totalSodium = document.getElementById("sodium_mg")
+                var totalPotassium = document.getElementById("potassium_mg")
+                var totalServingSize = document.getElementById("serving_size_g")
+
+                if (data[0] === undefined) {
+                    checkFood.innerHTML = 'Unavalible food type please try again'
+                    totalCarbs.innerHTML = ''
+                    totalCalories.innerHTML = '' 
+                    totalFat.innerHTML = ''
+                    totalProtien.innerHTML = ''
+                    totalSodium.innerHTML = ''
+                    totalPotassium.innerHTML = ''
+                    totalServingSize.innerHTML = ''
+                    return;
+                } else {
+                    checkFood.innerHTML = data[0].name
+                    totalCarbs.innerHTML = data[0].carbohydrates_total_g + 'g'
+                    totalCalories.innerHTML = data[0].calories 
+                    totalFat.innerHTML = data[0].fat_total_g + 'g'
+                    totalProtien.innerHTML = data[0].protein_g + 'g'
+                    totalSodium.innerHTML = data[0].sodium_mg + 'mg'
+                    totalPotassium.innerHTML = data[0].potassium_mg + 'mg'
+                    totalServingSize.innerHTML = data[0].serving_size_g + 'g'
+                }
+
+
+            })
+        });
+    };
+}
