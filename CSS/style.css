@@ -4,15 +4,14 @@
 }
 .card {
     margin: 10px 0 10px 10px;
-
+    min-width: 400px;
+    min-height: 600px;
+    background-color: rgb(238, 250, 246);
 }
 footer {
     display: inline;
-    
     color: rgb(44, 136, 105);
     text-decoration: none;
-    
-    
 }
 
 
@@ -37,17 +36,22 @@ footer {
     width: 80vw;
     text-align: center;
     margin-left: 10vw;
-}
-
-#body-bg {
-    background-color: rgb(151, 152, 151);
-}
+}   
 
 .row-cols-1 {
-    background-color: rgb(228, 228, 228);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgb(121, 157, 145), rgba(255, 255, 255));
+}
+#mainBox {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(121, 157, 145), rgba(255, 255, 255));
+
 }
 
 iframe {
     border-radius: 5px 5px 0px 0px;
     min-height: 376px;
+}
+
+#calorie {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(121, 157, 145), rgba(255, 255, 255));
+
 }
