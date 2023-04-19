@@ -22,7 +22,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(armtitle)
@@ -52,7 +52,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(abstitle)
@@ -82,7 +82,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(backTitle)
@@ -112,7 +112,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(calvesTitle)
@@ -142,7 +142,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(cardiotitle)
@@ -172,7 +172,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(chestTitle)
@@ -202,7 +202,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(legsTitle)
@@ -232,7 +232,7 @@ if (window.location.href.includes =( 'targetedworkouts.html')) {
                     const content = `
                     <div class="card" id="card-${[i]}">
                     <h2>${data[i].name}</h2>
-                    <p>${data[i].equipment}</p>
+                    <p>${data[i].difficulty}</p>
                     <p>${data[i].instructions}</p>
                     </div>` 
                     console.log(shoulderTitle)
