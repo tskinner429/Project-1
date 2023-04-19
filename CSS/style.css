@@ -27,6 +27,20 @@ footer {
 } */
 
 
-#workoutTitle {
-    text-align: 
+#mainBox h2 {
+    text-align: center;
+    font-size: xx-large;
 }
+
+#mainBox .card{
+    background-color: rgb(238, 250, 246);
+    width: 80vw;
+    text-align: center;
+    margin-left: 10vw;
+}
+
+#body-bg {
+    background-color: rgb(151, 152, 151);
+}
+
+#
