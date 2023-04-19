@@ -592,8 +592,6 @@ if (window.location.href.includes = ('index.html')) {
                     totalPotassium.innerHTML = data[0].potassium_mg + 'mg'
                     totalServingSize.innerHTML = data[0].serving_size_g + 'g'
                 }
-
-
             })
         });
     };
