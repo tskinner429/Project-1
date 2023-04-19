@@ -372,6 +372,95 @@ if (window.location.href.includes('targetedworkouts.html')) {
 };
 
 
+if (window.location.href.includes('calorie.html')) {
+
+var button = document.getElementById("Calculate")
+
+
+
+function calculateCalorie(obj)
+{
+    console.log(obj.children[1].children[0].children[0].children[1].value)
+                    const age = document.getElementById("age").value;
+                    const gender = document.getElementById("gender").value;
+                    const bodyFat = document.getElementById("bodyFat").value;
+                    const height = document.getElementById("height").value;
+                    const weight = document.getElementById("weight").value;
+                    const activity = document.getElementById("activity").value;
+                    const unit = document.getElementById("unit").value;
+                    const formula = document.getElementById("formula").value;
+                    
+                    
+            
+
+                    let BMR = '';
+                    if(formula == 0) // Mifflin
+                    {
+                        if(gender == 0){
+                          BMR = 10*weight + 6.25*height - 5*age + 5  
+                        } else{
+                            BMR = 10*weight + 6.25*height - 5*age - 161
+                        }
+                      
+                    }
+                    else if(formula == 1) // Harris
+                    {
+                        if(gender == 0){
+                            BMR = 13.397*weight + 4.799*height - 5.677*age + 88.362
+                        } else {
+                            BMR = 9.247*weight + 3.098*height - 4.330*age + 447.593
+                        }
+                      
+                    }
+                   
+
+                    let ret = parseFloat(BMR)*parseFloat(activity);
+                    if(unit == 'kilojoules')
+                    {
+                        ret = (ret*4.1868);
+                    }
+
+                    document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 class="text-center form-control my-3 text-danger fs-4">You should consume <span class="text-white">'+Math.ceil(ret)+' '+unit+'/day </span> of calorie to maintain your weight.</h4></div>';
+                }
+button.addEventListener("submit" , function(event){
+    event.preventDefault()
+  
+    calculateCalorie(event.target)
+})}
+
+
+if (window.location.href.includes('index.html')) {
+    var legsbutton = document.getElementById('legs');
+    legsbutton.addEventListener('click', function () {
+        var type = this.getAttribute('data-type')
+        window.location.href = 'targetedworkouts.html?type=' + type;
+    });
+};
+if (window.location.href.includes('targetedworkouts.html')) {
+    var urlParams = new URLSearchParams(window.location.search);
+    var type = urlParams.get('type')
+    if (type === 'legs') {
+        workoutlist.legs()
+    }
+};
+
+
+if (window.location.href.includes('index.html')) {
+    var sholderbutton = document.getElementById('sholder');
+    sholderbutton.addEventListener('click', function () {
+        var type = this.getAttribute('data-type')
+        window.location.href = 'targetedworkouts.html?type=' + type;
+    });
+};
+if (window.location.href.includes('targetedworkouts.html')) {
+    var urlParams = new URLSearchParams(window.location.search);
+    var type = urlParams.get('type')
+    if (type === 'sholder') {
+        workoutlist.shoulder()
+    }
+};
+
+
 
 
 if (window.location.href.includes('calorie.html')) {
