@@ -42,3 +42,12 @@ footer {
 #body-bg {
     background-color: rgb(151, 152, 151);
 }
+
+.row-cols-1 {
+    background-color: rgb(228, 228, 228);
+}
+
+iframe {
+    border-radius: 5px 5px 0px 0px;
+    min-height: 376px;
+}
