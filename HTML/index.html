@@ -1,103 +1,188 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <title>Health Guide</title>
-    </head>
-    <body>
-        <!-- start of Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
-            <div class="container-fluid">
-                <a href="../HTML/index.html" 
-                class="navbar-brand mb-0 h1">
-                    <img 
-                    class="d-inline-block align-center" 
-                    src="../image/healthguidelogo.png" alt="health-guide-logo" width="50" height="40" />
-                    Health Guide
-                </a>
-                <!-- Hamberger Menu-->
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <section class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a href="../HTML/index.html" class="nav-link active"> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../HTML/calorie.html" class="nav-link">BMR Calculator</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Targeted Workouts</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a href="#" class="dropdown-item" id="abs" data-type="abs">Abs</a></li>
-                                <li><a href="#" class="dropdown-item" id="arms" data-type="arm">Arms</a></li>
-                                <li><a href="#" class="dropdown-item" id="back" data-type="back">Back</a></li>
-                                <li><a href="#" class="dropdown-item" id="calves" data-type="calves">Calves</a></li>
-                                <li><a href="#" class="dropdown-item" id="cardio" data-type="cardio">Cardio</a></li>
-                                <li><a href="#" class="dropdown-item" id="chest" data-type="chest">Chest</a></li>
-                                <li><a href="#" class="dropdown-item" id="legs" data-type="legs">Legs</a></li>
-                                <li><a href="#" class="dropdown-item" id="sholder" data-type="sholder">Sholder</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <form class="d-flex">
-                    <input type="text" class="form-control me-2">
-                    <button type="submit" class="btn btn-outline-success"><a href="google.com"></a>search</button>
-                    <!-- <a href="http://www.google.com/">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Health Guide</title>
+</head>
+
+<body>
+    <!-- start of Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
+        <div class="container-fluid">
+            <a href="../HTML/index.html" class="navbar-brand mb-0 h1">
+                <img class="d-inline-block align-center" src="../image/healthguidelogo.png" alt="health-guide-logo"
+                    width="50" height="40" />
+                Health Guide
+            </a>
+            <!-- Hamberger Menu-->
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="../HTML/index.html" class="nav-link active"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../HTML/calorie.html" class="nav-link">BMR Calculator</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Targeted Workouts</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="#" class="dropdown-item" id="abs" data-type="abs">Abs</a></li>
+                            <li><a href="#" class="dropdown-item" id="arms" data-type="arm">Arms</a></li>
+                            <li><a href="#" class="dropdown-item" id="back" data-type="back">Back</a></li>
+                            <li><a href="#" class="dropdown-item" id="calves" data-type="calves">Calves</a></li>
+                            <li><a href="#" class="dropdown-item" id="cardio" data-type="cardio">Cardio</a></li>
+                            <li><a href="#" class="dropdown-item" id="chest" data-type="chest">Chest</a></li>
+                            <li><a href="#" class="dropdown-item" id="legs" data-type="legs">Legs</a></li>
+                            <li><a href="#" class="dropdown-item" id="sholder" data-type="sholder">Sholder</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <form class="d-flex">
+                <input type="text" class="form-control me-2">
+                <button type="submit" class="btn btn-outline-success"><a href="google.com"></a>search</button>
+                <!-- <a href="http://www.google.com/">
                         <input type="button" value="Visit Google" />
                     </a> -->
-                </form>
-            </div>
-        </nav>
-        <!-- end of Navbar-->
-        <Main class="container-fluid">
-            <div class="row-3">
-                <div class="col-4 "> 
+            </form>
+        </div>
+    </nav>
+    <!-- end of Navbar-->
+
+    <Main class="container">
+        <div class="row">
+            <div class="col">
                 <h1 id="blog-link">Blog Links</h1>
                 <div class="card" style="width: 18rem;">
                     <img src="../image/Screenshot 2023-04-18 at 5.31.23 AM.png" class="card-img-top" alt="green bowl">
                     <div class="card-body">
-                      <h5 class="card-title">YOUR GUIDE TO THE LSF 30 FITNESS CHALLENGE</h5>
-                      <p class="card-text"> I wanted to give you some really amazing resources to help you throughout the next 30 days.</p>
+                        <h5 class="card-title">YOUR GUIDE TO THE LSF 30 FITNESS CHALLENGE</h5>
+                        <p class="card-text"> I wanted to give you some really amazing resources to help you throughout
+                            the next 30 days.</p>
                     </div>
                     <div class="card-body">
-                      <a href="lovesweatfitness.com/your-guide-to-the-lsf-30-fitness-challenge/" class="card-link">Love Sweat Fitness</a>
+                        <a href="lovesweatfitness.com/your-guide-to-the-lsf-30-fitness-challenge/"
+                            class="card-link">Love Sweat Fitness</a>
                     </div>
-                  </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">You Gained Weight, But It’s NOT Fat</h5>
-                      <h6 class="card-subtitle mb-2 text-body-secondary">The Weight You Gain In One Day Or One Week Isn't Fat</h6>
-                      <p class="card-text">Did you gain a bunch of weight within a short period of time? Specifically, did you gain a few pounds either overnight, or over the span of a week?</p>
-                      <a href="https://www.aworkoutroutine.com/weight-gain-isnt-fat/"  class="card-link">Mind Body Green</a>
-                    </div>
-                  </div>
+            </div>
+            <div class="row col">
+                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/5z7c7NdcH7I"
+                    title="How to Exercise &amp; Diet Correctly for Your Body Type | Joanna Soh" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">How to Exercise & Diet Correctly for Your Body Type</h5>
+                    How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
+                    Do you know what's your body type? Are you doing the right type of workout? Are you eating
+                    correctly? If
+                    you haven't been seeing results, then perhaps your training and diet isn't correct according to your
+                    body type.
+                </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                  <h5 class="card-title">Pine Nuts</h5>
-                  <h6 class="card-subtitle mb-2 text-body-secondary">Benefits, Nutrition & How To Eat More Of Them</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://www.mindbodygreen.com/articles/pine-nut-benefits"  class="card-link">A Workout Routine </a>
+                    <h5 class="card-title">You Gained Weight, But It’s NOT Fat</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">The Weight You Gain In One Day Or One Week Isn't
+                        Fat</h6>
+                    <p class="card-text">Did you gain a bunch of weight within a short period of time? Specifically, did
+                        you gain a few pounds either overnight, or over the span of a week?</p>
+                    <a href="https://www.aworkoutroutine.com/weight-gain-isnt-fat/" class="card-link">Mind Body
+                        Green</a>
                 </div>
-              </div>
+            </div>
         </div>
-        </Main>
-
-    
-
-
-
+        <div class="col">
+            <iframe height="50%" width="40%" src="https://www.youtube.com/embed/Lwe5OEutkUc"
+                title="Should You Stretch Before, During or After a Workout? (Science Based)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="media-body">
+                <h5 class="mt-0 mb-1">Should You Stretch Before, During or After a Workout?</h5>
+                When is the best time to stretch? Should you stretch before working out? Should you stretch after
+                working out? Or should you not stretch at all? Well we break down what the science actually says on this
+                and guide you when and how to stretch for the best results possible!
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Pine Nuts</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Benefits, Nutrition & How To Eat More Of Them</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="https://www.mindbodygreen.com/articles/pine-nut-benefits" class="card-link">A Workout Routine
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <iframe height="50%" width="40%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
+                title="Healthy Weeknight Meals Done In 30 Minutes" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="media-body">
+                <h5 class="mt-0 mb-1">Healthy Weeknight Meals Done in 30 Minutes</h5>
+                Watch this video to watch easy healthy meals that you can cook in thirty minutes!
+            </div>
+        </div>
+        <!-- Youtube video section
+        <div class="container col">
+            <h1 class="blog-link">Videos</h1>
+            <div>
+                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/5z7c7NdcH7I"
+                    title="How to Exercise &amp; Diet Correctly for Your Body Type | Joanna Soh" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">How to Exercise & Diet Correctly for Your Body Type</h5>
+                    How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
+                    Do you know what's your body type? Are you doing the right type of workout? Are you eating
+                    correctly? If
+                    you haven't been seeing results, then perhaps your training and diet isn't correct according to your
+                    body type.
+                </div>
+            </div>
+            <div class="container col">
+                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/Lwe5OEutkUc"
+                    title="Should You Stretch Before, During or After a Workout? (Science Based)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Should You Stretch Before, During or After a Workout?</h5>
+                    When is the best time to stretch? Should you stretch before working out? Should you stretch after
+                    working out? Or should you not stretch at all? Well we break down what the science actually says on
+                    this
+                    and guide you when and how to stretch for the best results possible!
+                </div>
+            </div>
+            <div class="col">
+                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
+                    title="Healthy Weeknight Meals Done In 30 Minutes" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1">Healthy Weeknight Meals Done in 30 Minutes</h5>
+                    Watch this video to watch easy healthy meals that you can cook in thirty minutes!
+                </div>
+            </div>
+        </div> -->
+    </Main>
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="../JavaScript/script.js"></script>
-  </body>
+</body>
+
 </html>
