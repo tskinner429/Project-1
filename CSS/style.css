@@ -92,3 +92,14 @@
     vertical-align: middle;
 }
 /*BMR Calculator END*/
+
+
+/* Was trying to align the youtube content to the right side of the page */
+/* .right {
+    position: absolute;
+    width: 82%;
+    padding-left: 57%;
+    top: 0;
+    padding-top: 3.5%;
+    left: 15%;
+} */
