@@ -27,6 +27,11 @@ footer {
 } */
 
 
-#workoutTitle {
-    text-align: 
+#mainBox h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#mainBox p {
+    background-col
 }
