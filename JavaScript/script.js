@@ -472,28 +472,49 @@ var button = document.getElementById("Calculate")
 function calculateCalorie(obj)
 {
     console.log(obj.children[1].children[0].children[0].children[1].value)
-                    const age = document.getElementById("age").value;
-                    const gender = document.getElementById("gender").value;
-                    const bodyFat = document.getElementById("bodyFat").value;
-                    const height = document.getElementById("height").value;
-                    const weight = document.getElementById("weight").value;
-                    const activity = document.getElementById("activity").value;
+                    const age = document.getElementById("age").value; //targets the age option, user can only input numbers and input is mandatory
+                    const gender = document.getElementById("gender").value; //dropdown menu, user must select option
+                    const bodyFat = document.getElementById("bodyFat").value; //user can only input numbers and it calculates by % 
+                    const height = document.getElementById("height").value; //user must input height by inches
+                    const weight = document.getElementById("weight").value; //calculates in pounds
+                    const activity = document.getElementById("activity").value; //takes activity level into effect as height and weight measurements are not enough to get accurate reading
                     const unit = document.getElementById("unit").value;
                     const formula = document.getElementById("formula").value;
+                    const heightUnit = document.getElementById("heightUnit").value;
+                    const weightUnit = document.getElementById("weightUnit").value;
+
+                    //interface will use two different sets of  real world BMR equations translated over into javascript
                     
                     
             
 
                     let BMR = '';
                     if(formula == 0) // Mifflin
+
                     {
-                        if(gender == 0){
-                          BMR = 10*weight + 6.25*height - 5*age + 5  
-                        } else{
-                            BMR = 10*weight + 6.25*height - 5*age - 161
+                        if(heightUnit == 0){
+                            if(gender == 0){
+                                BMR = 10*weight + 6.25*height - 5*age + 5  
+                              } else{
+                                  BMR = 10*weight + 6.25*height - 5*age - 161
+                              }
+                              
+
+                            
+
                         }
+                        else{
+                            if(gender == 0){
+                                BMR = 10*weight + 6.25*height - 5*age + 5  
+                              } else{
+                                  BMR = 10*weight + 6.25*height - 5*age - 161
+                              }
+                            
+                        }
+                       
                       
                     }
+                    
                     else if(formula == 1) // Harris
                     {
                         if(gender == 0){
@@ -503,7 +524,6 @@ function calculateCalorie(obj)
                         }
                       
                     }
-                   
 
                     let ret = parseFloat(BMR)*parseFloat(activity);
                     if(unit == 'kilojoules')

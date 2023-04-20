@@ -87,15 +87,24 @@ integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJ
                             name="bodyFat" id="bodyFat" required value="20">
                         </div>
                         <div class="col-sm-6 form-group">
-                            <h6>Height (IN)*</h6>
+                            <h6>Height*</h6>
                             <input type="number" class="form-control"
                             name="Height" id="height" required value="65">
+                            <select name="heightUnit" class="form-select" id="heightUnit">
+                                <option value="0">inches</option>
+                                <option value="1">centemeters</option>
+                            </select>
+
                         </div>
                         <div class="col-sm-6 form-group">
                             <div class="col-sm-6 ">
                             <h6>Weight (LBS)*</h6>
                             <input type="number" class="form-control"
                             name="weight" id="weight" required value="160">
+                            <select name="weightUnit" class="form-select" id="weightUnit">
+                                <option value="0">LBS</option>
+                                <option value="1">Kilograms</option>
+                            </select>
                         </div>
                         <div class="col-sm-6 form-group">
                            
