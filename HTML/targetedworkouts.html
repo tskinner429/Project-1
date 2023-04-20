@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="body-bg">
     <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
         <div class="container-fluid">
             <a href="../HTML/index.html" class="navbar-brand mb-0 h1">
@@ -34,21 +34,21 @@
                         <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Targeted Workouts</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a href="#" class="dropdown-item" id="abs" data-type="abs">Abs</a></li>
-                            <li><a href="#" class="dropdown-item" id="arms" data-type="arm">Arms</a></li>
-                            <li><a href="#" class="dropdown-item" id="back" data-type="back">Back</a></li>
-                            <li><a href="#" class="dropdown-item" id="calves" data-type="calves">Calves</a></li>
-                            <li><a href="#" class="dropdown-item" id="cardio" data-type="cardio">Cardio</a></li>
-                            <li><a href="#" class="dropdown-item" id="chest" data-type="chest">Chest</a></li>
-                            <li><a href="#" class="dropdown-item" id="legs" data-type="legs">Legs</a></li>
-                            <li><a href="#" class="dropdown-item" id="sholder" data-type="sholder">Sholder</a></li>
+                            <li><a href="targetedworkouts.html?type=abs" class="dropdown-item" id="abs" data-type="abs">Abs</a></li>
+                            <li><a href="targetedworkouts.html?type=arm" class="dropdown-item" id="arms" data-type="arm">Arms</a></li>
+                            <li><a href="targetedworkouts.html?type=back" class="dropdown-item" id="back" data-type="back">Back</a></li>
+                            <li><a href="targetedworkouts.html?type=calves" class="dropdown-item" id="calves" data-type="calves">Calves</a></li>
+                            <li><a href="targetedworkouts.html?type=cardio" class="dropdown-item" id="cardio" data-type="cardio">Cardio</a></li>
+                            <li><a href="targetedworkouts.html?type=chest" class="dropdown-item" id="chest" data-type="chest">Chest</a></li>
+                            <li><a href="targetedworkouts.html?type=legs" class="dropdown-item" id="legs" data-type="legs">Legs</a></li>
+                            <li><a href="targetedworkouts.html?type=sholder" class="dropdown-item" id="sholder" data-type="sholder">Sholder</a></li>
                         </ul>
                     </li>
                 </ul>
             </section>
-            <form class="d-flex">
+            <!-- <form class="d-flex">
                 <input type="text" class="form-control me-2">
-                <button type="submit" class="btn btn-outline-success"><a href="google.com"></a>search</button>
+                <button type="submit" class="btn btn-outline-success"><a href="google.com"></a>search</button> -->
                 <!-- <a href="http://www.google.com/">
                         <input type="button" value="Visit Google" />
                     </a> -->
@@ -61,6 +61,9 @@
     <div id="workoutTitle"></div>
     <div id="workoutEquipment"></div>
     <div id="workoutInfo"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="../JavaScript/script.js"></script>
 </body>
 </html>
