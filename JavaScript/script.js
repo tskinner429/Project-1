@@ -615,4 +615,4 @@ if (window.location.href.includes ('../HTML/index.html')) {
             })
         });
     };
-}
+};
