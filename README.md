@@ -1,11 +1,13 @@
 # Fitness web Project (super team project)
+
+
+
+
+
 ## Description
 
+Are you looking for a way to achieve your fitness goals and improve your health? Our fitness web page “Health Guide” is here to help you! With targeted workouts for each muscle group, healthy meal recipes, and a BMR calculator, our web page makes it easy for you to stay on top of your fitness routine. Whether you want to lose weight, build muscle, or simply maintain a healthy lifestyle, our app has everything you need to succeed. With access to fitness resources, expert advice from certified trainers, and a variety of workouts to choose from, you'll have all the tools you need to reach your fitness goals. So why wait? Visit “Health Guide” today and start your journey towards a healthier, happier you!
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
 
 ## Installation
 
@@ -14,19 +16,16 @@ N/A
 ## Usage
 If you looking for to lose or gain some weight this website is for you. 
 
+
 ## Contributors
-name ---------------- Github-username
 
-Christian Kasegne: --christiankasegne
-Zack Miller----------ZmCoder2
-Christian Smith------christian6404
-Taylor Skinner-------tskinner429
-
+Github-username: christiankasegne, ZmCoder2, christian6404, tskinner429
 
 
 ## License
 
 MIT License
+
 
 ## Features
 
@@ -34,3 +33,9 @@ BMR-calculator
 Taregeted work-up guide
 Nutritional value calculator
 exercice motivator quote
+
+
+## Credit
+https://api-ninjas.com/api/quotes
+https://api-ninjas.com/api/nutrition
+https://api-ninjas.com/api/exercises
