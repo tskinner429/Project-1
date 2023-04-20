@@ -3,17 +3,11 @@
     margin-top: 20px;
 }
 .card {
-    margin: 10px 0 10px 10px;
-    min-width: 400px;
-    min-height: 600px;
-    background-color: rgb(238, 250, 246);
+    /* margin: 10px 0 10px 10px;
+    min-width: 300px;
+    min-height: 500px;
+    background-color: rgb(238, 250, 246); */
 }
-footer {
-    display: inline;
-    color: rgb(44, 136, 105);
-    text-decoration: none;
-}
-
 
 /* Was trying to align the youtube content to the right side of the page */
 /* .right {
@@ -54,4 +48,15 @@ iframe {
 #calorie {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(121, 157, 145), rgba(255, 255, 255));
 
+}
+.wrapper {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(189, 221, 221);
+    padding: 20px 35px;
+    
+}
+
+.signup-form-btn{
+    margin: 5px;
+    padding: 5px;
 }
