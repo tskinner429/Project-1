@@ -540,7 +540,7 @@ button.addEventListener("submit" , function(event){
 })}
 
 
-if (window.location.href.includes ("index.html")) {
+if (window.location.href.includes ("super-team-project")) {
     let options = {
         method: 'GET',
         headers: {
@@ -564,7 +564,7 @@ if (window.location.href.includes ("index.html")) {
     })  
 }
 
-if (window.location.href.includes ('index.html')) {
+if (window.location.href.includes ('super-team-project')) {
     window.onload = function() {
         var confirmBtn = document.getElementById('confirmButton');
         confirmBtn.addEventListener('click', function(btn) {
