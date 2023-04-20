@@ -357,8 +357,8 @@ if (window.location.href.includes('targetedworkouts.html')) {
 
 
 if (window.location.href.includes('index.html')) {
-    var sholderbutton = document.getElementById('sholder');
-    sholderbutton.addEventListener('click', function () {
+    var shoulderbutton = document.getElementById('shoulder');
+    shoulderbutton.addEventListener('click', function () {
         var type = this.getAttribute('data-type')
         window.location.href = 'targetedworkouts.html?type=' + type;
     });
@@ -366,7 +366,7 @@ if (window.location.href.includes('index.html')) {
 if (window.location.href.includes('targetedworkouts.html')) {
     var urlParams = new URLSearchParams(window.location.search);
     var type = urlParams.get('type')
-    if (type === 'sholder') {
+    if (type === 'shoulder') {
         workoutlist.shoulder()
     }
 };
@@ -446,8 +446,8 @@ if (window.location.href.includes('targetedworkouts.html')) {
 
 
 if (window.location.href.includes('index.html')) {
-    var sholderbutton = document.getElementById('sholder');
-    sholderbutton.addEventListener('click', function () {
+    var shoulderbutton = document.getElementById('shoulder');
+    shoulderbutton.addEventListener('click', function () {
         var type = this.getAttribute('data-type')
         window.location.href = 'targetedworkouts.html?type=' + type;
     });
@@ -455,7 +455,7 @@ if (window.location.href.includes('index.html')) {
 if (window.location.href.includes('targetedworkouts.html')) {
     var urlParams = new URLSearchParams(window.location.search);
     var type = urlParams.get('type')
-    if (type === 'sholder') {
+    if (type === 'shoulder') {
         workoutlist.shoulder()
     }
 };
