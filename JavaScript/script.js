@@ -463,7 +463,7 @@ if (window.location.href.includes('targetedworkouts.html')) {
 
 
 
-if (window.location.href.includes('../HTML/calorie.html')) {
+if (window.location.href.includes('calorie.html')) {
 
 var button = document.getElementById("Calculate")
 
@@ -540,7 +540,7 @@ button.addEventListener("submit" , function(event){
 })}
 
 
-if (window.location.href.includes ("../HTML/index.html")) {
+if (window.location.href.includes ("index.html")) {
     let options = {
         method: 'GET',
         headers: {
@@ -564,7 +564,7 @@ if (window.location.href.includes ("../HTML/index.html")) {
     })  
 }
 
-if (window.location.href.includes ('../HTML/index.html')) {
+if (window.location.href.includes ('index.html')) {
     window.onload = function() {
         var confirmBtn = document.getElementById('confirmButton');
         confirmBtn.addEventListener('click', function(btn) {
