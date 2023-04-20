@@ -13,7 +13,7 @@
 
 <body>
     <!-- start of Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-success-subtle">
+    <nav class="navbar navbar-expand-sm navbar-light bg-success-subtle">
         <div class="container-fluid">
             <a href="../HTML/index.html" class="navbar-brand mb-0 h1">
                 <img class="d-inline-block align-center" src="../image/healthguidelogo.png" alt="health-guide-logo"
@@ -51,14 +51,10 @@
                     </li>
                 </ul>
             </section>
-            <!-- <form class="d-flex">
-                <input type="text" class="form-control me-2">
-                <button type="submit" class="btn btn-outline-success"><a href="google.com"></a>search</button>
-            </form> -->
         </div>
     </nav>
     <!-- end of Navbar-->
-
+<!--- home page cards --->
     <Main class="container-fluid">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
@@ -73,23 +69,26 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <iframe height="50%" width="100%" src="https://www.youtube.com/embed/5z7c7NdcH7I"
+                   
+                    <iframe src="https://www.youtube.com/embed/5z7c7NdcH7I"
                 title="How to Exercise &amp; Diet Correctly for Your Body Type | Joanna Soh" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
+                    
                     <div class="card-body">
                     <h5 class="card-title">How to Exercise & Diet Correctly for Your Body Type</h5>
-                    <p class="card-text">How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
+                    <!-- <p class="card-text">How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
                         Do you know what's your body type? Are you doing the right type of workout? Are you eating
                         correctly? If
                         you haven't been seeing results, then perhaps your training and diet isn't correct according to your
-                        body type.</p>
+                        body type.</p> -->
                     </div>
                 </div>
                 </div>
             <div class="col">
             <div class="card">
                 <div class="card-body">
+                    <img height="300px" width="100%"src="../image/motivation.jpeg" class="card-img-top" alt="motivation">
                 <h5 class="card-title" id="quoteAuthor"></h5>
                 <p class="card-text" id="quote"></p>
                 </div>
@@ -98,6 +97,7 @@
             <div class="col">
                 <div class="card">
                 <div class="card-body">
+                    <img src="../image/gain weight but not fat.jpeg" class="card-img-top" alt="gain weight but not fat">
                     <h5 class="card-title">You Gained Weight, But It's NOT Fat</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">The Weight You Gain In One Day Or One Week Isn't
                         Fat</h6>
@@ -116,8 +116,7 @@
                     allowfullscreen></iframe>
                 <div class="card-body">
                     <h5 class="card-title">Should You Stretch Before, During or After a Workout?</h5>
-                    <p class="card-text">When is the best time to stretch? Should you stretch before working out? Should you stretch after
-                        working out? Or should you not stretch at all? Well we break down what the science actually says on this
+                    <p class="card-text">What the science actually says on this
                         and guide you when and how to stretch for the best results possible!</p>
                 </div>
                 </div>
@@ -125,9 +124,10 @@
             <div class="col">
                 <div class="card">
                 <div class="card-body">
+                    <img height="160px" width="100%" src="../image/diet.jpg" class="card-img-top" alt="dait">
                     <form class="d-flex">
                         <input type='text' class="form-control me-2" id="inputBox" placeholder="Put any type of food here"></input>
-                        <button type="button" class="btn btn-outline-success" id="confirmButton">Submit</button>
+                        <button type="button" class="btn btn-success" id="confirmButton">Submit</button>
                     </form>
                     <h5 class="card-title" id="foodCheckIfAvailable"></h5>
                     <p class="card-text">Total Carbs: <span  id="carbohydrates_total_g"></span></p>
@@ -155,118 +155,38 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <iframe height="50%" width="100%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
+                    <iframe height="100%" width="100%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
                 title="Healthy Weeknight Meals Done In 30 Minutes" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
                     <div class="card-body">
                     <h5 class="card-title">Healthy Weeknight Meals Done in 30 Minutes</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
+                    
+                    </div> 
                 </div>
                 </div>
             <div class="col">
             <div class="card">
-                <img src="..." class="card-img-top" alt="...">
+                <Div class="wrapper">
+                    <h2>Signup Form</h2>
+                    <form id="signup-form">
+                        <label for="username">Username</label><br>
+                        <input type="text" name="username" id="username" placeholder="username"> <br>
+            
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="email"> <br>
+                        <br>
+                        <button type="submit">submit</button>
+                        <div class="user"></div>
+                    </form>
+               </Div>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Watch this video to watch easy healthy meals that you can cook in thirty minutes!</p>
+                
                 </div>
             </div>
             </div>
         </div>
     </Main>
-
-
-
-
-  
-
-
-   <!---  
-        
-        <div class="row col-">
-            <iframe height="50%" width="40%" src="https://www.youtube.com/embed/5z7c7NdcH7I"
-                title="How to Exercise &amp; Diet Correctly for Your Body Type | Joanna Soh" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">How to Exercise & Diet Correctly for Your Body Type</h5>
-                How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
-                Do you know what's your body type? Are you doing the right type of workout? Are you eating
-                correctly? If
-                you haven't been seeing results, then perhaps your training and diet isn't correct according to your
-                body type.
-            </div>
-        </div>
-
-        <div class="col">
-            <iframe height="33%" width="33%" src="https://www.youtube.com/embed/Lwe5OEutkUc"
-                title="Should You Stretch Before, During or After a Workout? (Science Based)" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">Should You Stretch Before, During or After a Workout?</h5>
-                When is the best time to stretch? Should you stretch before working out? Should you stretch after
-                working out? Or should you not stretch at all? Well we break down what the science actually says on this
-                and guide you when and how to stretch for the best results possible!
-            </div>
-        <div class="col">
-            <iframe height="50%" width="40%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
-                title="Healthy Weeknight Meals Done In 30 Minutes" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <div class="media-body">
-                <h5 class="mt-0 mb-1">Healthy Weeknight Meals Done in 30 Minutes</h5>
-                Watch this video to watch easy healthy meals that you can cook in thirty minutes!
-            </div>
-        </div> -->
-
-
-        <!-- Youtube video section
-        <div class="container col">
-            <h1 class="blog-link">Videos</h1>
-            <div>
-                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/5z7c7NdcH7I"
-                    title="How to Exercise &amp; Diet Correctly for Your Body Type | Joanna Soh" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">How to Exercise & Diet Correctly for Your Body Type</h5>
-                    How to Exercise & Diet Correctly for Your Body Type | Joanna Soh
-                    Do you know what's your body type? Are you doing the right type of workout? Are you eating
-                    correctly? If
-                    you haven't been seeing results, then perhaps your training and diet isn't correct according to your
-                    body type.
-                </div>
-            </div>
-            <div class="container col">
-                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/Lwe5OEutkUc"
-                    title="Should You Stretch Before, During or After a Workout? (Science Based)" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Should You Stretch Before, During or After a Workout?</h5>
-                    When is the best time to stretch? Should you stretch before working out? Should you stretch after
-                    working out? Or should you not stretch at all? Well we break down what the science actually says on
-                    this
-                    and guide you when and how to stretch for the best results possible!
-                </div>
-            </div>
-            <div class="col">
-                <iframe height="50%" width="40%" src="https://www.youtube.com/embed/_f4ArgoSmoM"
-                    title="Healthy Weeknight Meals Done In 30 Minutes" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Healthy Weeknight Meals Done in 30 Minutes</h5>
-                    Watch this video to watch easy healthy meals that you can cook in thirty minutes!
-                </div>
-            </div>
-        </div> -->
-    </Main>
-
-
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -276,21 +196,18 @@
     <script src="../JavaScript/script.js"></script>
 </body>
 
+<!--- Footer --->
+
 <footer>
-    <nav class="navbar bg-body-tertiary">
+    <div class="footer bg-body-tertiary bg-success-subtle">
         <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="../image/healthguidelogo.png" alt="health-guide-logo" width="70" height="70">
-          </a>
-          <div calss="footer"> 
-            <ul>
-                <li>About Us</li>
-                <li>contact: 555-555-5555</li>
-                <li>email: healthguide@gmail.com</li>
-            </ul>   
-            
+          <a class="footer-brand" href="index.html">
+            <img class="d-inline-block align-center" src="../image/healthguidelogo.png" alt="health-guide-logo" width="70" height="70" class="d-inline-block align-text-top">
+        </a>
+        <div calss="footer" class="d-inline-block align-text-top">
+            <h3>Health Guide</h3>
         </div>
-      </nav>
+    </div>
 </footer>
 
 </html>
