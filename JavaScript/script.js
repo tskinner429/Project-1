@@ -591,7 +591,8 @@ if (window.location.href.includes ('index.html')) {
                 var totalSodium = document.getElementById("sodium_mg")
                 var totalPotassium = document.getElementById("potassium_mg")
                 var totalServingSize = document.getElementById("serving_size_g")
-
+                var theRock = ''
+                
                 if (data[0] === undefined) {
                     checkFood.innerHTML = 'Unavalible food type please try again'
                     totalCarbs.innerHTML = ''
@@ -602,7 +603,16 @@ if (window.location.href.includes ('index.html')) {
                     totalPotassium.innerHTML = ''
                     totalServingSize.innerHTML = ''
                     return;
-                } else {
+                } else if (url2 === 'https://api.api-ninjas.com/v1/nutrition?query=rock' || url2 === 'https://api.api-ninjas.com/v1/nutrition?query=rocks') {
+                    checkFood.innerHTML = 'I am not The Rock. I am Dwayne Johnson. Dwayne Johnson'
+                    totalCarbs.innerHTML = ''
+                    totalCalories.innerHTML = '' 
+                    totalFat.innerHTML = ''
+                    totalProtien.innerHTML = ''
+                    totalSodium.innerHTML = ''
+                    totalPotassium.innerHTML = ''
+                    totalServingSize.innerHTML = ''
+                }  else {
                     checkFood.innerHTML = data[0].name
                     totalCarbs.innerHTML = data[0].carbohydrates_total_g + 'g'
                     totalCalories.innerHTML = data[0].calories 
