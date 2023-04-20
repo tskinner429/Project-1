@@ -420,7 +420,7 @@ function calculateCalorie(obj)
                         ret = (ret*4.1868);
                     }
 
-                    document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 class="text-center form-control my-3 text-danger fs-4">You should consume <span class="text-white">'+Math.ceil(ret)+' '+unit+'/day </span> of calorie to maintain your weight.</h4></div>';
+                    document.querySelector(".ans_calculate").innerHTML = '<div class="container"><h4 class="text-center form-control my-3 text-danger fs-4">You should consume <span class="text-black">'+Math.ceil(ret)+' '+unit+'/day </span> of calorie to maintain your weight.</h4></div>';
                 }
 button.addEventListener("submit" , function(event){
     event.preventDefault()
@@ -463,7 +463,7 @@ if (window.location.href.includes('targetedworkouts.html')) {
 
 
 
-if (window.location.href.includes('calorie.html')) {
+if (window.location.href.includes('../HTML/calorie.html')) {
 
 var button = document.getElementById("Calculate")
 
@@ -540,7 +540,7 @@ button.addEventListener("submit" , function(event){
 })}
 
 
-if (window.location.href.includes = ('index.html')) {
+if (window.location.href.includes ("../HTML/index.html")) {
     let options = {
         method: 'GET',
         headers: {
@@ -564,7 +564,7 @@ if (window.location.href.includes = ('index.html')) {
     })  
 }
 
-if (window.location.href.includes = ('index.html')) {
+if (window.location.href.includes ('../HTML/index.html')) {
     window.onload = function() {
         var confirmBtn = document.getElementById('confirmButton');
         confirmBtn.addEventListener('click', function(btn) {
