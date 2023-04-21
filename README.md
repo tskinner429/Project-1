@@ -1,6 +1,8 @@
 # Fitness web Project (super team project)
 
 
+![Screenshot 2023-04-20 at 2 19 48 PM](https://user-images.githubusercontent.com/128755872/233517101-c823a4f2-ba97-4c75-9a8a-bdb62d3ef09f.png)
+
 
 
 
